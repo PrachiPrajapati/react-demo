@@ -1,0 +1,2988 @@
+/****font-face included*****/
+img {
+  max-width: 100%;
+}
+/*typography Strat*/
+h1 {
+  margin-bottom: 0;
+  font-size: 64px;
+  line-height: 108.5%;
+  font-weight: 400;
+  color: #ffb1b1;
+}
+h2 {
+  font-size: 60px;
+  line-height: 72px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: rgba(110, 114, 216, 0.86);
+}
+h5 {
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.86);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+h6 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.86);
+  font-family: "Roboto", sans-serif;
+}
+p {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 108.5%;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+p.big-text {
+  font-size: 22px;
+  line-height: 39.6px;
+  font-weight: 400;
+}
+a,
+button {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  font-size: 15px;
+  line-height: 22px;
+  transition: all 0.5s ease;
+}
+.active-btn-box.large-btn .active-btn,
+.active-btn-box.large-btn {
+  width: 100%;
+}
+/*typography End*/
+/*****common section start****/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none !important;
+}
+body {
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Londrina Solid", cursive;
+}
+img {
+  border: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+a:focus,
+a:active,
+a:visited {
+  outline: none;
+  border: 0px;
+}
+.text-none {
+  text-transform: none !important;
+}
+button.navbar-toggler {
+  outline: 0;
+}
+/* .slick-slide { display: none; }  
+.slider-loader                              { display: block; }
+.slick-initialized .slick-slide             { display: block; }
+.slick-initialized .slider-loader           { display: none !important; } */
+/*****common section End****/
+/***Header-section Css Start****/
+.navbar {
+  padding: 0;
+}
+.navbar-collapse {
+  padding: 15px 0;
+}
+.header-section {
+  padding: 8px 30px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.header-section ul.navbar-nav li {
+  margin: 0 42px;
+}
+.header-section ul li a.nav-link {
+  margin: 0;
+  padding: 9px 24px !important;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.86);
+  transition: all 0.3s ease;
+  background-color: #ffb1b1;
+  border-radius: 45px;
+  font-family: "Londrina Solid", cursive;
+}
+.active-btn-box {
+  position: relative;
+  display: inline-block;
+}
+.active-btn {
+  position: relative;
+  padding: 8px 35px;
+  z-index: 1;
+  background: #afbef6;
+  border-radius: 45px;
+  font-size: 26px;
+  line-height: 32px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.86);
+  border: 0;
+}
+.active-btn-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 4px;
+  top: 4px;
+  z-index: 0;
+  border-radius: 45px;
+  background-color: #8f8dfb;
+  transition: all 0.3s ease;
+}
+.active-btn:hover {
+  background-color: #8f8dfb;
+}
+.active-btn-box:hover:after {
+  left: 0;
+  top: 0;
+}
+.header-section ul.navbar-nav li:last-child {
+  margin-right: 0;
+}
+.header-section ul.navbar-nav li a.nav-link {
+  position: relative;
+}
+.header-section ul.navbar-nav li a.nav-link:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 4px;
+  top: 4px;
+  border-radius: 45px;
+  background-color: #b1b4ff;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.social-media {
+  margin: 0 80px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.social-media li {
+  margin: 0 20px;
+}
+.social-media li:first-child {
+  margin-left: 0;
+}
+.social-media li:last-child {
+  margin-right: 0;
+}
+.social-media li img {
+  transition: all 0.5s ease;
+}
+.social-media li a:hover img {
+  filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.25));
+}
+.header-section ul.navbar-nav li a.nav-link:hover:after {
+  left: 0;
+  top: 0;
+}
+.header-section ul.navbar-nav li a.nav-link:hover {
+  background-color: #b1b4ff !important;
+}
+.navbar-brand {
+  padding: 0;
+  max-width: 300px;
+  border: 0 !important;
+  padding: 2px;
+  z-index: 1;
+}
+/* Header Dropdown  */
+.dropdown-menu {
+  position: relative;
+  border-radius: 0 !important;
+}
+.dropdown.active-btn {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown.active-btn {
+  padding: 9px 16px;
+  text-align: center;
+  border-radius: 29px;
+}
+.dropdown-menu {
+  float: none;
+  background: transparent;
+  border: none;
+  margin: 0;
+  /*   border-top: 1px solid #f4f6fe; */
+  margin-top: 10px;
+}
+button#dropdownMenuButton {
+  background: transparent;
+  border: none;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  color: rgba(255, 255, 255, 0.86);
+  font-family: "Londrina Solid";
+  display: flex;
+  align-items: center;
+  padding: 7px 20px;
+}
+a.dropdown-item {
+  padding: 0;
+  text-align: center;
+  font-family: "Londrina Solid";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  color: rgba(255, 255, 255, 0.86) !important;
+  margin-bottom: 7px;
+}
+a.dropdown-item:hover {
+  color: #afbef6 !important;
+  background-color: transparent;
+}
+
+.dropdown-toggle-before {
+  margin: 0 0 0 35px;
+}
+.dropdown-toggle {
+  margin: 0 0 0 35px;
+}
+.dropdown-toggle::after {
+  border: none;
+  background: url("../images/bottom-caret.svg") no-repeat center center/cover;
+  width: 17px;
+  height: 12px;
+  vertical-align: middle;
+  transform: rotate(0deg);
+}
+
+.dropdown.active-btn.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+.dropdown-btn-box {
+  min-width: 192px;
+}
+.dropdown-btn-box.active-btn-box::after {
+  border-radius: 27px;
+}
+.dropdown-btn-box.active-btn-box:hover:after {
+  opacity: 0;
+}
+.dropdown-btn-box.active-btn-box.show-dropdown:after {
+  opacity: 0;
+}
+.dropdown-btn-box.active-btn-box.show-dropdown .active-btn {
+  background-color: #8f8dfb;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #8f8dfb;
+}
+/***Header-section Css End****/
+.imgg-box img {
+  max-width: 100%;
+}
+/* Banner Section  */
+.banner-section {
+  background-image: url("../images/home-banner.png");
+  padding-bottom: 50px;
+  height: 100vh;
+  max-height: 100vh;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Home Page End */
+/* My NFT Page Start */
+.dropdown-menu.show {
+  position: absolute;
+  background-color: #8f8dfb;
+  width: 100%;
+  border-radius: 0 0 29px 29px !important;
+  margin-top: 0;
+  padding-top: 10px;
+  border: 0;
+}
+.dropdown-menu.show::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  top: 0;
+  height: 1px;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%);
+}
+.show-dropdown .dropdown.active-btn {
+  border-radius: 29px 29px 0 0 !important;
+}
+/* .inner-box                                  { overflow: hidden; } */
+.outer-content-box {
+  max-width: 100%;
+  padding: 30px 50px 30px 41px;
+  width: 100%;
+  max-height: 100%;
+  height: calc(100vh - 138px);
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 70px;
+  mix-blend-mode: normal;
+}
+.common-container {
+  padding: 108px 30px 30px;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+.my-nft-page {
+  background: linear-gradient(255.71deg, #ffe8fe 0%, #fff0da 100%);
+}
+.title-box {
+  margin-bottom: 50px;
+  padding: 7px 18px;
+  border-radius: 45px;
+  text-align: center;
+}
+.blue-bg {
+  background: #afbef6;
+}
+.title-box h4 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #f9f9f9;
+}
+.info-box {
+  margin-top: 19px;
+  text-align: center;
+}
+.info-box h5 {
+  margin-bottom: 7px;
+}
+.info-box h6 {
+  margin-bottom: 0;
+}
+.img-box {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.goddess-product-list-box {
+  max-height: 450px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.my-nft-page .outer-content-box {
+  overflow: hidden;
+}
+.my-nft-page .goddess-product-list-box {
+  max-height: calc(100vh - 250px);
+}
+
+.goddess-product-list {
+  margin: 0 0 0 -43px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+.goddess-product-list li {
+  padding: 0 43px 64px;
+  width: calc(100% / 3);
+}
+.ice-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ice-box ul {
+  display: flex;
+  align-items: center;
+}
+label {
+  margin-bottom: 10px;
+}
+label,
+.price-box {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+  font-family: "Roboto";
+}
+.stacking-inner {
+  padding-right: 0px;
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+.my-nft-page .stacking-inner {
+  max-height: calc(100vh - 300px);
+}
+
+.stacking-yield-item {
+  padding: 0 18px;
+}
+.stacking-yield-item li {
+  margin-bottom: 20px;
+}
+.col-space {
+  padding: 0 31px;
+}
+.pink-bg {
+  background: #fba1a1;
+}
+.stacking-inner .title-box {
+  margin-bottom: 20px;
+}
+.mCSB_scrollTools .mCSB_dragger {
+  width: 13px;
+  height: 108px;
+  background: #ffd3d3;
+  border-radius: 11px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #ffd3d3 !important;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+  background: #ffd3d3 !important;
+}
+/* My NFT Page End */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.csb::-webkit-scrollbar {
+  display: none;
+} /* Hide scrollbar for IE, Edge and Firefox */
+.csb {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.dropdown-btn-box {
+  min-width: 180px;
+}
+.dropdown-btn-box.active-btn-box::after {
+  border-radius: 27px;
+}
+.stacking-yield-item .ice-box li {
+  margin-bottom: 0;
+}
+.ice-box {
+  padding: 9px 12px;
+  border-radius: 45px;
+  transition: all 0.2s ease;
+}
+.ice-box:hover {
+  background-color: #ffdddd;
+}
+.ice-box .price-box {
+  margin-bottom: 0;
+}
+/*================================= Shop Page Start ====================================*/
+.shop-page {
+  background: linear-gradient(255.71deg, #e1b6e0 0%, #b1e3ff 100%);
+  overflow: hidden;
+}
+.heading {
+  margin-bottom: 16px;
+}
+.shop-page .goddess-product-list-box {
+  max-height: 62vh;
+  padding-bottom: 20px;
+  position: relative;
+}
+.shop-page .goddess-product-list-box .goddess-product-list {
+  margin-bottom: 15px;
+  position: relative;
+}
+.shop-page .goddess-product-list-box .goddess-product-list:after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ff2222;
+}
+.ice-img-box img {
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+  transform: translate(20%);
+  max-width: 85vh;
+  z-index: 2;
+}
+.img-box img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  height: 190px;
+  max-height: 190px;
+}
+
+.info-box .active-btn-box {
+  margin-top: 10px;
+}
+.shop-page .info-box h5 {
+  margin-bottom: 2px;
+}
+.form-control-box {
+  padding: 10px 14px;
+  border: 2px solid #afbef6;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 30px;
+  width: 100%;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto";
+}
+.form-control-box::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 30px;
+  font-family: "Roboto";
+}
+.shop-page .goddess-product-list .input-box .active-btn {
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.shop-page .goddess-product-list .input-box .active-btn-box:after {
+  border-radius: 50%;
+  left: 1px;
+  top: 1px;
+}
+.input-box .active-btn-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 0 !important;
+}
+.input-box {
+  margin-top: 10px;
+  position: relative;
+}
+.inc-dec-box {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.min-plus-btn {
+  display: flex;
+  align-items: center;
+}
+.min-plus-btn button {
+  margin: 0 11px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: #f4acb4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+}
+.min-plus-btn span {
+  font-size: 26px;
+  line-height: 31px;
+  font-family: "Londrina Solid";
+  color: rgba(0, 0, 0, 0.86);
+}
+/* transaction page  */
+.transaction-page,
+.about-page {
+  background: linear-gradient(255.71deg, #ffe8fe 0%, #fff0da 100%);
+}
+.transaction-table thead tr {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 0);
+  background: #ffdddd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+}
+.transaction-table thead th {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  font-family: "Londrina Solid" !important;
+}
+.transaction-table thead th,
+.transaction-table td {
+  padding: 5px 20px;
+  font-family: "Roboto";
+}
+tr:first-child th:first-child,
+tr td:first-child {
+  border-top-left-radius: 45px;
+}
+tr:first-child th:last-child,
+tr td:last-child {
+  border-top-right-radius: 45px;
+}
+tr:last-child th:first-child,
+tr td:first-child {
+  border-bottom-left-radius: 45px;
+}
+tr:last-child th:last-child,
+tr td:last-child {
+  border-bottom-right-radius: 45px;
+}
+.transaction-table td {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.transaction-table table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.transaction-table table tbody {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  height: 400px;
+}
+
+.transaction-page .outer-content-box {
+  overflow: hidden;
+}
+
+.transaction-page .transaction-table table tbody {
+  height: calc(100vh - 250px);
+}
+
+.transaction-table .table-responsive {
+  min-width: 500px;
+  padding: 0 15px;
+}
+tbody tr {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+tbody tr:nth-child(odd) td {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+tbody tr:nth-child(even) {
+  background: #ffdddd;
+  border-radius: 45px;
+}
+.price {
+  width: 14%;
+}
+/* ========== About Page Start===========*/
+/* .about-page .outer-content-box {  min-height: calc(100vh - 150px); } */
+.community {
+  height: auto;
+  overflow: scroll;
+  display: block; /* undo "display: none;" */
+  visibility: visible;
+}
+.tab-content > .tab-pane {
+  display: block; /* undo "display: none;" */
+  margin-right: -100%;
+  visibility: visible;
+  width: 100%;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: auto;
+}
+
+.tab-pane::-webkit-scrollbar {
+  display: none;
+}
+
+.about-page .title-box {
+  margin-bottom: 40px;
+}
+.content-box p {
+  margin-bottom: 20px;
+}
+
+.tab-buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+.tab-buttons ul {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tab-buttons .active-btn-box .active-btn {
+  background: #f0ce75;
+  display: block;
+}
+.tab-buttons .active-btn-box:after {
+  background: #afbef6;
+}
+.tab-buttons .active-btn-box:hover .active-btn,
+.active-btn-box.active .active-btn {
+  background: #afbef6;
+  color: #fff;
+}
+.tab-buttons .active-btn-box.active:after {
+  left: 0;
+  top: 0;
+}
+ul.content-box > li {
+  margin-bottom: 29px;
+}
+.roadmap-content li {
+  list-style-image: url("../images/bullet-point.png");
+  margin-bottom: 16px;
+  list-style-position: inside;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 108.5%;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+.content-box > li:nth-child(3) li:first-child {
+  list-style-image: url("../images/bullet-checkbox.png");
+}
+
+.content-box > li:nth-child(5) li:first-child {
+  list-style-image: url("../images/bullet-checkbox.png");
+}
+
+.content-box > li:nth-child(5) li:last-child {
+  list-style-image: url("../images/bullet-checkbox.png");
+}
+.roadmap-content li:last-child {
+  margin-bottom: 0;
+}
+.about-content {
+  box-sizing: border-box;
+}
+
+.about-content-box {
+  max-height: 47vh;
+  max-width: 100%;
+}
+ul.perks-content-box {
+  padding-left: 26px;
+  list-style: disc !important;
+}
+.perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a {
+  list-style-type: disc !important;
+  margin-bottom: 16px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 108.5%;
+}
+.terms-page .perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a { list-style-type: none !important; line-height: 110%; }
+.terms-page .perks-content-box li ol.list-style-digit li{ list-style-type:decimal !important ;}
+.terms-page .perks-content-box li ol.list-style-digit.blue-style h4 { color:#000; }
+.terms-page .perks-content-box li ol.list-style-digit { padding-left: 24px; }
+.terms-page .perks-content-box h4 { color:#8f8dfb;  }
+.team-infobox {
+  margin: 10px;
+  transition: all 0.5s ease;
+  border-radius: 20px;
+  max-width: 340px;
+  width: calc(100% - 10px);
+}
+
+.team-info-data {
+  max-height: 100%;
+}
+
+.team-infobox .team-info::-webkit-scrollbar {
+  display: none;
+}
+.team-infobox:hover {
+  box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.25);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.team-infobox:hover .team-info {
+  opacity: 1;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.image-box {
+  width: 100%;
+  overflow-y: auto;
+}
+.image-box img {
+  max-width: 100%;
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.slick-slider .slick-list {
+  padding-right: 130px;
+}
+
+.team-info {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-start !important;
+  transition: all 0.5s ease;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 20px 24px;
+  position: absolute;
+  max-width: 410px;
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.team-info::-webkit-scrollbar {
+  display: none;
+}
+.team-info h4 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 108.5%;
+  color: #c9c9c9;
+}
+
+.team-info > div::-webkit-scrollbar {
+  display: none;
+}
+.team-info p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 108.5%;
+  font-family: "Roboto";
+  color: #c9c9c9;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.team-info .social-media a img {
+  max-width: 50px;
+}
+
+/* empty-nft */
+.outer-content-box {
+  position: relative;
+}
+.empty-nft-page {
+  position: relative;
+}
+.empty-nft-page:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  overflow: hidden;
+  border-radius: 70px;
+}
+.empty-nft {
+  padding: 20px;
+  position: absolute;
+  top: calc(50% + 60px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 60;
+  width: 100%;
+  text-align: center;
+}
+.empty-nft h1 {
+  color: #afbef6;
+}
+.empty-nft .imgbox {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.empty-nft .imgbox a {
+  margin-right: 50px;
+  display: inline-block;
+}
+.empty-nft .imgbox a img {
+  max-width: 100%;
+}
+.empty-nft .imgbox a:last-child {
+  margin-right: 0;
+}
+.empty-nft-page .title-box.blue-bg {
+  position: relative;
+  z-index: 50;
+}
+/******Responsive Css Sstart*/
+@media (min-width: 1400px) and (max-width: 1599px) {
+  h1 {
+    font-size: 58px;
+    line-height: 108.5%;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  h6 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 108.5%;
+  }
+  .navbar-collapse {
+    padding: 10px 0;
+  }
+
+  .header-section {
+    padding: 15px 15px 0px;
+  }
+  .header-section ul.navbar-nav li {
+    margin: 0 42px;
+  }
+  .header-section ul li a.nav-link {
+    padding: 7px 20px !important;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .active-btn {
+    padding: 7px 28px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .active-btn::after,
+  .header-section ul.navbar-nav li a.nav-link:after {
+    left: 4px;
+    top: 4px;
+  }
+
+  .shop-button {
+    margin-left: 11px;
+  }
+  .shop-page .shop-button {
+    margin-left: 0 !important;
+  }
+  .social-media {
+    margin: 0 74px;
+  }
+  .social-media li {
+    margin: 0 16px;
+  }
+  .navbar-brand {
+    max-width: 260px;
+  }
+
+  /* My NFT Page Start */
+  .outer-content-box {
+    padding: 50px 52px 50px 40px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    height: calc(100vh - 121px);
+  }
+  .common-container {
+    padding: 110px 15px 15px;
+  }
+  .title-box {
+    margin-bottom: 40px;
+    padding: 7px 14px;
+  }
+  .title-box h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .info-box {
+    margin-top: 15px;
+    padding: 0 14px;
+  }
+  .info-box h5 {
+    margin-bottom: 5px;
+  }
+  .goddess-product-list-box {
+    max-height: 300px;
+    height: 100%;
+  }
+
+  .my-nft-page .goddess-product-list-box {
+    max-height: calc(100vh - 280px);
+  }
+
+  .goddess-product-list {
+    margin: 0 0 0 -30px;
+  }
+  .goddess-product-list li {
+    padding: 0 20px 25px;
+  }
+  label {
+    margin-bottom: 7px;
+  }
+  label,
+  .price-box {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stacking-inner {
+    padding-right: 12px;
+    max-height: 300px;
+  }
+  .stacking-yield-item {
+    padding: 0 25px;
+  }
+  .stacking-yield-item li {
+    margin-bottom: 12px;
+  }
+  .col-space {
+    padding: 0 16px;
+  }
+  .stacking-inner .title-box {
+    margin-bottom: 10px;
+  }
+  .mCSB_scrollTools .mCSB_dragger {
+    width: 10px;
+    height: 80px;
+    border-radius: 11px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  /* My NFT Page End */
+  /*================================= Shop Page Start ====================================*/
+  .heading {
+    margin-bottom: 12px;
+  }
+  .shop-page .goddess-product-list-box {
+    max-height: 60vh;
+    padding-bottom: 15px;
+  }
+  .shop-page .goddess-product-list-box:after {
+    width: calc(100% - 43px);
+    height: 1px;
+  }
+  .ice-img-box img {
+    bottom: -16%;
+    right: 0;
+    transform: translate(20%);
+    max-width: 72vh;
+  }
+  .img-box {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .info-box .active-btn-box {
+    margin-top: 8px;
+  }
+  .shop-page .info-box h5 {
+    margin-bottom: 2px;
+  }
+  .form-control-box {
+    padding: 8px 12px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .form-control-box::placeholder {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .shop-page .goddess-product-list .input-box .active-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .input-box {
+    margin-top: 8px;
+  }
+  .inc-dec-box {
+    margin-top: 8px;
+  }
+  .min-plus-btn button {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+  }
+  .min-plus-btn span {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .shop-page .goddess-product-list .input-box .active-btn {
+    width: 48px;
+    height: 48px;
+  }
+  /*================== transaction Page start =======================*/
+  .transaction-table .table-responsive {
+    min-width: 1000px;
+  }
+  .transaction-table .mCSB_container {
+    overflow: auto;
+  }
+  /* about page start */
+  .about-page .title-box {
+    margin-bottom: 30px;
+  }
+  .content-box p {
+    margin-bottom: 18px;
+  }
+  .tab-buttons {
+    margin-top: 20px;
+  }
+  .tab-buttons ul {
+    max-width: 80%;
+  }
+  ul.content-box > li {
+    margin-bottom: 20px;
+  }
+  .roadmap-content li {
+    font-size: 22px;
+    line-height: 108.5%;
+  }
+
+  .about-content-box {
+    /* max-height: 400px; */
+    max-height: 54vh;
+  }
+  ul.perks-content-box {
+    padding-left: 26px;
+  }
+  .perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a {
+    margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 108.5%;
+  }
+  .slick-slider .slick-list {
+    padding-right: 100px;
+  }
+  .team-infobox {
+    margin: 15px;
+    max-width: 320px;
+  }
+  .team-info {
+    padding: 5px 10px;
+  }
+  .team-info h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .team-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .team-info .social-media a img {
+    max-width: 40px;
+  }
+
+  /* empty-nft */
+  .empty-nft-page:after {
+    border-radius: 50px;
+  }
+  .empty-nft {
+    padding: 18px;
+    top: calc(50% + 60px);
+  }
+  .empty-nft .imgbox {
+    margin-top: 20px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 40px;
+    width: 80px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  h1 {
+    font-size: 52px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .navbar-collapse {
+    padding: 24px 0;
+  }
+  .header-section {
+    padding: 8px 70px 0px;
+  }
+  .header-section ul.navbar-nav li {
+    margin: 0 24px;
+  }
+  .header-section ul li a.nav-link {
+    padding: 5px 18px !important;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .active-btn {
+    padding: 7px 26px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .active-btn::after,
+  .header-section ul.navbar-nav li a.nav-link:after {
+    left: 4px;
+    top: 4px;
+  }
+  .social-media {
+    margin: 0 58px;
+  }
+  .social-media li {
+    margin: 0 14px;
+  }
+  .navbar-brand {
+    max-width: 260px;
+  }
+  .social-media li img {
+    max-width: 50px;
+  }
+  /* My NFT Page Start */
+  .outer-content-box {
+    padding: 30px 52px 30px 30px;
+    border-radius: 30px;
+    height: calc(100vh - 121px);
+  }
+  .common-container {
+    padding: 110px 15px 15px;
+  }
+  .title-box {
+    margin-bottom: 40px;
+    padding: 7px 14px;
+  }
+  .title-box h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .info-box {
+    margin-top: 15px;
+  }
+  .info-box h5 {
+    margin-bottom: 5px;
+  }
+  .goddess-product-list-box {
+    max-height: 300px;
+    height: 100%;
+  }
+  .goddess-product-list {
+    margin: 0 0 0 -20px;
+  }
+  .goddess-product-list li {
+    padding: 0 20px 40px;
+    width: calc(100% / 2);
+  }
+  label {
+    margin-bottom: 7px;
+  }
+  label,
+  .price-box {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stacking-inner {
+    padding-right: 12px;
+    max-height: 300px;
+  }
+  .stacking-yield-item {
+    padding: 0 25px;
+  }
+  .stacking-yield-item li {
+    margin-bottom: 12px;
+  }
+  .col-space {
+    padding: 0 16px;
+  }
+  .stacking-inner .title-box {
+    margin-bottom: 10px;
+  }
+  .mCSB_scrollTools .mCSB_dragger {
+    width: 10px;
+    height: 80px;
+    border-radius: 11px;
+  }
+  /* My NFT Page End */
+  /*================================= Shop Page Start ====================================*/
+  .heading {
+    margin-bottom: 12px;
+  }
+  .shop-page .goddess-product-list-box {
+    max-height: 55vh;
+    padding-bottom: 15px;
+  }
+  .shop-page .goddess-product-list-box:after {
+    width: calc(100% - 43px);
+    height: 1px;
+  }
+  .ice-img-box img {
+    bottom: -15%;
+    right: 0;
+    transform: translate(20%);
+    max-width: 100%;
+  }
+  .img-box {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .info-box .active-btn-box {
+    margin-top: 8px;
+  }
+  .shop-page .info-box h5 {
+    margin-bottom: 2px;
+  }
+  .form-control-box {
+    padding: 8px 12px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .form-control-box::placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .shop-page .goddess-product-list .input-box .active-btn {
+    width: 42px;
+    height: 42px;
+  }
+  .input-box {
+    margin-top: 8px;
+  }
+  .inc-dec-box {
+    margin-top: 8px;
+  }
+  .min-plus-btn button {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+  }
+  .min-plus-btn span {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .transaction-table .table-responsive {
+    min-width: 1000px;
+  }
+
+  .transaction-page .transaction-table table tbody {
+    height: calc(100vh - 230px);
+  }
+
+  .transaction-table .mCSB_container {
+    overflow: auto;
+  }
+  /* about page start */
+  .about-page .title-box {
+    margin-bottom: 16px;
+  }
+  .content-box p {
+    margin-bottom: 15px;
+  }
+  .tab-buttons {
+    margin-top: 16px;
+  }
+  .tab-buttons ul {
+    max-width: 80%;
+  }
+  ul.content-box > li {
+    margin-bottom: 16px;
+  }
+  .roadmap-content li {
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .about-content-box {
+    /* max-height: 250px; */
+    max-height: 54vh;
+  }
+  ul.perks-content-box {
+    padding-left: 20px;
+  }
+  .perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .slick-slider .slick-list {
+    padding-right: 80px;
+  }
+  .team-infobox {
+    margin: 15px;
+    max-width: 300px;
+  }
+  .team-info {
+    padding: 5px 10px;
+  }
+  .team-info h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .team-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .team-info .social-media a img {
+    max-width: 40px;
+  }
+  /* empty-nft */
+  .empty-nft-page:after {
+    border-radius: 30px;
+  }
+  .empty-nft {
+    padding: 14px;
+    top: calc(50% + 40px);
+  }
+  .empty-nft .imgbox {
+    margin-top: 20px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 20px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 30px;
+    width: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  button#dropdownMenuButton {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .dropdown-btn-box {
+    min-width: 168px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 108.5%;
+  }
+  .navbar-collapse {
+    padding: 15px 0;
+  }
+  .header-section {
+    padding: 8px 40px 0px;
+  }
+  .header-section ul.navbar-nav li {
+    margin: 0 24px;
+  }
+  .header-section ul li a.nav-link {
+    padding: 5px 15px !important;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .active-btn {
+    padding: 7px 22px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .active-btn::after,
+  .header-section ul.navbar-nav li a.nav-link:after {
+    left: 4px;
+    top: 4px;
+  }
+  .social-media {
+    margin: 0 50px;
+  }
+  .social-media li {
+    margin: 0 12px;
+  }
+  .navbar-brand {
+    max-width: 180px;
+  }
+  .social-media li img {
+    max-width: 40px;
+  }
+  /* My NFT Page Start */
+  .outer-content-box {
+    padding: 35px 24px 30px 30px;
+    border-radius: 40px;
+    height: calc(100vh - 121px);
+  }
+  .common-container {
+    padding: 106px 15px 15px;
+  }
+  .title-box {
+    margin-bottom: 30px;
+    padding: 7px 14px;
+  }
+  .title-box h4 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .info-box {
+    margin-top: 15px;
+    padding: 0 23px;
+  }
+  .info-box h5 {
+    margin-bottom: 5px;
+  }
+  .goddess-product-list-box {
+    max-height: 300px;
+    height: 100%;
+  }
+  .goddess-product-list {
+    margin: 0 0 0 0;
+  }
+  .goddess-product-list li {
+    padding: 0 11px 27px;
+    width: calc(100% / 2);
+  }
+  label {
+    margin-bottom: 7px;
+  }
+  label,
+  .price-box {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stacking-inner {
+    padding-right: 12px;
+    max-height: 300px;
+  }
+  .stacking-yield-item {
+    padding: 0 25px;
+  }
+  .stacking-yield-item li {
+    margin-bottom: 12px;
+  }
+  .col-space {
+    padding: 0 16px;
+  }
+  .stacking-inner .title-box {
+    margin-bottom: 10px;
+  }
+  .mCSB_scrollTools .mCSB_dragger {
+    width: 10px;
+    height: 80px;
+    border-radius: 11px;
+  }
+  /*================================= Shop Page Start ====================================*/
+  .transaction-table td {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .heading {
+    margin-bottom: 10px;
+  }
+  .shop-page .goddess-product-list-box {
+    max-height: 62vh;
+    padding-bottom: 12px;
+  }
+  .img-box img {
+    height: 130px;
+    max-height: 130px;
+  }
+  .shop-page .goddess-product-list-box:after {
+    width: calc(100% - 43px);
+    height: 1px;
+  }
+  .ice-img-box img {
+    bottom: -15%;
+    right: 0;
+    transform: translate(20%);
+    max-width: 100%;
+  }
+  .img-box {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .info-box .active-btn-box {
+    margin-top: 6px;
+  }
+  .shop-page .info-box h5 {
+    margin-bottom: 2px;
+  }
+  .form-control-box {
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form-control-box::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .shop-page .goddess-product-list .input-box .active-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .input-box {
+    margin-top: 8px;
+  }
+  .inc-dec-box {
+    margin-top: 8px;
+  }
+  .min-plus-btn button {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+  }
+  .min-plus-btn span {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .transaction-table .table-responsive {
+    min-width: 1000px;
+  }
+  .transaction-table .mCSB_container {
+    overflow: auto;
+  }
+  tbody tr:nth-child(odd) td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .transaction-table td {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  /* about page start */
+  .about-page .title-box {
+    margin-bottom: 16px;
+  }
+  .content-box p {
+    margin-bottom: 15px;
+  }
+  .tab-buttons {
+    margin-top: 16px;
+  }
+  .tab-buttons ul {
+    max-width: 80%;
+  }
+  ul.content-box > li {
+    margin-bottom: 16px;
+  }
+  .roadmap-content li {
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .about-content-box {
+    /* max-height: 300px; */
+    max-height: 54vh;
+  }
+  ul.perks-content-box {
+    padding-left: 20px;
+  }
+  .perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .slick-slider .slick-list {
+    padding-right: 80px;
+  }
+  .team-infobox {
+    margin: 12px;
+    max-width: 300px;
+  }
+  .team-info {
+    padding: 5px 10px;
+  }
+  .team-info h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .team-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .team-info .social-media a img {
+    max-width: 40px;
+  }
+  /* empty-nft */
+  .empty-nft-page:after {
+    border-radius: 40px;
+  }
+  .empty-nft {
+    padding: 14px;
+    top: calc(50% + 40px);
+  }
+  .empty-nft .imgbox {
+    margin-top: 16px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 12px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 20px;
+    width: 70px;
+  }
+  /* .navbar-collapse > div {
+    margin-top: 15px;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 991px) /* for tablet */ {
+  .dropdown-btn-box {
+    min-width: 168px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 108.5%;
+  }
+  .navbar-collapse {
+    padding: 15px 0;
+  }
+  .header-section {
+    padding: 8px 16px 0px;
+  }
+  .header-section ul.navbar-nav li {
+    margin: 0 16px;
+  }
+  .header-section ul li a.nav-link {
+    padding: 5px 14px !important;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .active-btn {
+    padding: 6px 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .active-btn::after,
+  .header-section ul.navbar-nav li a.nav-link:after {
+    left: 4px;
+    top: 4px;
+  }
+  .social-media {
+    margin: 0 30px;
+  }
+  .social-media li {
+    margin: 0 8px;
+  }
+  .navbar-brand {
+    max-width: 125px;
+  }
+  .social-media li img {
+    max-width: 30px;
+  }
+
+  .banner-section {
+    background: url("../images/tablet-bg.jpg") no-repeat bottom center / cover;
+  }
+
+  /* My NFT Page Start */
+  .outer-content-box {
+    padding: 35px 24px 30px 30px;
+  }
+  .common-container {
+    padding: 90px 15px 15px;
+    height: auto;
+  }
+  .title-box {
+    margin-bottom: 30px;
+    padding: 7px 14px;
+  }
+  .title-box h4 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+  .info-box {
+    margin-top: 15px;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .info-box h5 {
+    margin-bottom: 5px;
+  }
+  .goddess-product-list-box {
+    max-height: 250px;
+    height: 100%;
+  }
+  .my-nft-page .goddess-product-list-box {
+    max-height: 250px;
+  }
+  .goddess-product-list {
+    margin: 0 0 0 -11px;
+  }
+  .goddess-product-list li {
+    padding: 0 11px 27px;
+    width: calc(100% / 2);
+  }
+  label {
+    margin-bottom: 7px;
+  }
+  label,
+  .price-box {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stacking-inner {
+    padding-right: 12px;
+    max-height: 250px;
+  }
+
+  .my-nft-page .stacking-inner {
+    max-height: 250px;
+  }
+
+  .stacking-yield-item {
+    padding: 0 25px;
+  }
+  .stacking-yield-item li {
+    margin-bottom: 12px;
+  }
+  .col-space {
+    padding: 20px 15px;
+  }
+  .stacking-inner .title-box {
+    margin-bottom: 10px;
+  }
+  .mCSB_scrollTools .mCSB_dragger {
+    width: 10px;
+    height: 80px;
+    border-radius: 11px;
+  }
+  .heading {
+    margin-bottom: 10px;
+  }
+  .shop-page .goddess-product-list-box {
+    max-height: 70vh;
+    padding-bottom: 12px;
+  }
+
+  .shop-page .goddess-product-list .input-box .active-btn {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .shop-page .goddess-product-list-box:after {
+    width: calc(100% - 43px);
+    height: 1px;
+  }
+  .ice-img-box img {
+    display: none;
+  }
+  .img-box {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .info-box .active-btn-box {
+    margin-top: 6px;
+  }
+  .shop-page .info-box h5 {
+    margin-bottom: 2px;
+  }
+  .form-control-box {
+    padding: 8px 12px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .form-control-box::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .shop-page .goddess-product-list .input-box .active-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .input-box {
+    margin-top: 8px;
+  }
+  .inc-dec-box {
+    margin-top: 8px;
+  }
+  .min-plus-btn button {
+    margin: 0 8px;
+    width: 18px;
+    height: 18px;
+  }
+  .min-plus-btn span {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .transaction-table .table-responsive {
+    min-width: 1100px;
+  }
+  .transaction-table .mCSB_container {
+    overflow: auto;
+  }
+  tbody tr:nth-child(odd) td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .transaction-table td {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  /* about page start */
+  .about-page .title-box {
+    margin-bottom: 16px;
+  }
+  .content-box p {
+    margin-bottom: 15px;
+  }
+  .tab-buttons {
+    margin-top: 16px;
+  }
+  .tab-buttons ul {
+    max-width: 80%;
+  }
+  ul.content-box > li {
+    margin-bottom: 16px;
+  }
+  .roadmap-content li {
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .about-content-box {
+    /* max-height: 300px; */
+    max-height: 60vh;
+  }
+  ul.perks-content-box {
+    padding-left: 20px;
+  }
+  .perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 108.5%;
+  }
+  .slick-slider .slick-list {
+    padding-right: 80px;
+  }
+  .team-infobox {
+    margin: 10px;
+    max-width: 280px;
+    width: calc(100% - 10px);
+  }
+  .team-info {
+    padding: 5px 10px;
+  }
+  .team-info h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .team-info p {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .team-info .social-media a img {
+    max-width: 30px;
+  }
+  /* empty-nft */
+  .empty-nft-page:after {
+    border-radius: 88px;
+  }
+  .empty-nft {
+    padding: 14px;
+    top: calc(50% + 40px);
+  }
+  .empty-nft .imgbox {
+    margin-top: 16px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 12px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 20px;
+    width: 70px;
+  }
+  /*   .navbar-collapse > div {
+    margin-top: 15px;
+  } */
+}
+@media (max-width: 767px) /* for mobile */ {
+  h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  h5 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  button.navbar-toggler {
+    padding: 0;
+    margin-left: 16px;
+    border: 0;
+  }
+  .mobile-nav {
+    margin-top: 0px;
+  }
+  .banner {
+    background-position: 52% 100%;
+  }
+
+  .navbar-collapse {
+    padding: 0;
+  }
+  .header-section {
+    padding: 29px 15px;
+    border-radius: 0 0 20px 20px;
+  }
+  .header-section.active-menu {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(24px);
+    z-index: 999;
+  }
+  /*   .header-section.active-menu .navbar-brand {
+    border: 1px solid #000;
+  } */
+  .about-slider-box {
+    position: relative;
+    z-index: 101;
+  }
+  .header-section ul.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header-section ul.navbar-nav li {
+    margin: 8px 10px;
+  }
+  .header-section ul.navbar-nav li a {
+    display: inline-block;
+  }
+  .header-section ul li a.nav-link {
+    padding: 5px 14px !important;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .active-btn {
+    padding: 12px 57px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .active-btn::after,
+  .header-section ul.navbar-nav li a.nav-link:after {
+    left: 4px;
+    top: 4px;
+  }
+  .social-media {
+    margin: 12px 0 0;
+    justify-content: center;
+  }
+  .social-media li {
+    margin: 0 13px;
+  }
+  .navbar-brand {
+    max-width: 80px;
+    margin-right: 0;
+    margin-left: 0px;
+  }
+  .social-media li img {
+    max-width: 30px;
+  }
+  .hamburger .line {
+    position: relative;
+    box-shadow: 1px 1px 0 #b1b4ff;
+    max-width: 100%;
+    width: 48px;
+    height: 9px;
+    background: #ffb1b1;
+    display: block;
+    border-radius: 10px;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  n
+  /*  .hamburger .line:after { content:""; position: absolute; top:1px; left: 1px; width: 100%; height: 100%; background: #B1B4FF;  border-radius: 10px; z-index: -1; } */
+  .hamburger:hover {
+    cursor: pointer;
+  }
+  /* ONE */
+  #hamburger-1.is-active .line:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(17px) rotate(45deg);
+    -ms-transform: translateY(17px) rotate(45deg);
+    -o-transform: translateY(17px) rotate(45deg);
+    transform: translateY(17px) rotate(45deg);
+  }
+  #hamburger-1.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-17px) rotate(-45deg);
+    -ms-transform: translateY(-17px) rotate(-45deg);
+    -o-transform: translateY(-17px) rotate(-45deg);
+    transform: translateY(-17px) rotate(-45deg);
+  }
+  .navbar-toggler-icon {
+    width: auto;
+    height: auto;
+    padding-right: 0px;
+  }
+  /* .banner-section {
+    background-position: center top;
+  } */
+  .banner-section {
+    background: url("../images/mobile-bg.jpg") no-repeat bottom center / cover;
+  }
+
+  /* My NFT Page Start */
+  .my-nft-page .outer-content-box,
+  .shop-page .outer-content-box,
+  .transaction-page .outer-content-box {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  .stacking-yield,
+  .your-goddess-box,
+  .transaction-page .inner-box {
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+  .outer-content-box {
+    padding: 9px 15px 20px 15px;
+    border-radius: 22px;
+  }
+  .common-container {
+    padding: 110px 15px 15px;
+    height: auto;
+    display: block;
+  }
+  .title-box {
+    margin-bottom: 20px;
+    padding: 7px 14px;
+  }
+  .title-box h4 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+  .my-nft-page .common-container {
+    overflow-y: auto;
+  }
+  .title-box.blue-bg,
+  .title-box.pink-bg.big-pink,
+  .bg-blue-mobile {
+    padding: 17px 8px;
+    border-radius: 12px;
+  }
+  .about-page .title-box.bg-blue-mobile h1 {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: #f4f6fe;
+  }
+  .about-page .title-box.bg-blue-mobile {
+    background: #afbef6;
+    border-radius: 12px;
+  }
+  .about-page .outer-content-box {
+    padding: 4px 4px;
+  }
+  .about-page .content-box,
+  .about-page .about-content-box {
+    padding: 0 15px;
+    max-height: none;
+  }
+  .tab-content p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 168.5%;
+  }
+  .tab-buttons ul {
+    padding: 10px 0 !important;
+    margin-bottom: 0 !important;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .tab-buttons ul::-webkit-scrollbar {
+    width: 5px;
+    opacity: 0;
+    height: 0;
+  }
+  .tab-buttons ul li a .active-btn {
+    border-radius: 8px;
+    padding: 10px 17px;
+  }
+
+  .tab-buttons ul li a.active-btn-box:after,
+  .active-btn-box.active:after {
+    border-radius: 8px;
+  }
+  .tab-buttons ul li {
+    margin: 0 11px;
+  }
+  .tab-buttons ul li:first-child {
+    margin-left: 0;
+  }
+  .about-page .tab-buttons ul li {
+    margin: 0px 7.5px;
+    flex:1 0 auto;
+  }
+  .about-content-box {
+    /* max-height: 400px; */
+    max-height: 63vh;
+  }
+  .about-content-box .content-box .content {
+    margin: 30px 0;
+  }
+  .title-box.pink-bg {
+    border-radius: 10px;
+  }
+  .title-box.blue-bg h4 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .info-box {
+    margin-top: 15px;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .info-box h5 {
+    margin-bottom: 5px;
+  }
+  .goddess-product-list-box {
+    max-height: 350px;
+    height: auto;
+  }
+  .goddess-product-list {
+    margin: 0;
+  }
+  .goddess-product-list li {
+    padding: 0 35px 30px;
+    width: 100%;
+  }
+  label {
+    margin-bottom: 7px;
+  }
+  label,
+  .price-box {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .stacking-inner {
+    padding-right: 0px;
+    max-height: none;
+  }
+
+  .my-nft-page .stacking-inner {
+    max-height: none;
+  }
+
+  .stacking-yield-item {
+    padding: 0 5px;
+  }
+  .ice-box {
+    padding: 6px;
+  }
+  .ice-box img {
+    max-width: 23px;
+  }
+  .stacking-yield-item li {
+    margin-bottom: 7px;
+  }
+  .col-space {
+    padding: 10px 15px;
+  }
+  .stacking-inner .title-box {
+    margin-bottom: 10px;
+  }
+  .stacking-inner .title-box:last-child {
+    margin-bottom: 0;
+  }
+  .mCSB_scrollTools .mCSB_dragger {
+    width: 10px;
+    height: 80px;
+    border-radius: 11px;
+  }
+  .mCSB_inside > .mCSB_container {
+    margin-right: 14px;
+  }
+  .team-infobox {
+    margin: 10px;
+    max-width: 280px;
+    width: calc(100% - 10px);
+  }
+  .team-info {
+    padding: 16px 5px;
+  }
+  .team-info h4 {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }
+  .team-info p {
+    margin-bottom: 3px;
+    font-size: 16px;
+  }
+  .team-info .social-media a img {
+    max-width: 20px;
+  }
+  /*   .mobile-menu {
+    margin-top: -90px;
+    width: 100%;
+    height: 520px;
+    padding-top: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    border-radius: 0 0 20px 20px;
+  } */
+
+  .mobile-menu ul {
+    margin-top: 17px;
+    padding-top: 17px;
+    border-top: 1px solid #afbef6;
+    transition: all 0.5s;
+    top: 0%;
+  }
+
+  .mobile-menu ul li {
+    margin-bottom: 24px;
+    transition: all 0.5s;
+  }
+  .mobile-menu ul li:last-child,
+  .mobile-menu ul.social-media li {
+    margin-bottom: 0;
+  }
+  .mobile-menu ul a {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: "Londrina Solid";
+    color: #afbef6;
+  }
+  .mobile-menu ul a:hover {
+    text-decoration: underline;
+  }
+  .pink-bg-btn {
+    flex: 1;
+    margin: 15px;
+    padding: 23px 12px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    font-family: "Londrina Solid";
+    color: rgba(255, 255, 255, 0.86);
+    background: #ffb1b1;
+    border-radius: 50px;
+  }
+  .pink-bg-btn img {
+    margin-left: 19px;
+  }
+  /* shop */
+  .ice-img-box {
+    display: none;
+  }
+  .heading {
+    padding-left: 15px;
+  }
+  .goddess-product-list .active-btn {
+    padding: 12px 50px;
+  }
+  .shop-page .goddess-product-list .active-btn {
+    padding: 12px 50px;
+  }
+  .form-control-box::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .inc-dec-box {
+    display: block;
+    text-align: center;
+  }
+  .min-plus-btn {
+    justify-content: center;
+  }
+  .shop-page .goddess-product-list-box {
+    /* max-height: 500px; */
+  }
+  /* transaction */
+  .transaction-page .outer-content-box .inner-box {
+    padding: 4px 0 !important;
+  }
+  .transaction-page .outer-content-box .inner-box .title-box {
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+  }
+  .transaction-page .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+  }
+  .transaction-page .outer-content-box .inner-box .row {
+    margin: 0;
+  }
+  .transaction-box {
+    display: none;
+  }
+  .transaction-data-box {
+    max-height: none;
+  }
+  .transaction-data-box p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .transaction-data-box li {
+    margin-bottom: 20px;
+    padding: 0 4px;
+  }
+  .transaction-data-box li:last-child {
+    margin-bottom: 0 !important;
+  }
+  .transaction-data-box li .item,
+  .transaction-data-box li .item .date-time {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .transaction-data-box li .item {
+    margin-bottom: 10px;
+  }
+  .transaction-data-box li .item .date-time p {
+    margin-right: 8px;
+  }
+  .transaction-data-box li:nth-child(even) {
+    padding: 10px 4px;
+    position: relative;
+    background-color: #ffdddd;
+  }
+
+  .roadmap-content li,
+  .perks-content-box li ,.terms-page .perks-content-box p ,.terms-page .perks-content-box a {
+    font-size: 16px;
+    line-height: 168.5%;
+  }
+  ul.content-box > li {
+    margin-bottom: 20px;
+  }
+  .transaction-data-box .mCSB_scrollTools {
+    right: -1px;
+  }
+  .transaction-data-box .mCSB_scrollTools,
+  .transaction-data-box .mCSB_scrollTools .mCSB_dragger {
+    width: 6px;
+  }
+  .min-plus-btn {
+    margin-bottom: 8px;
+  }
+  .no-scrollbar .mCSB_scrollTools {
+    opacity: 0 !important;
+    width: 0 !important;
+    display: block !important;
+  }
+  .no-scrollbar.shop-page .goddess-product-list-box,
+  .no-scrollbar .goddess-product-list-box {
+    max-height: none;
+  }
+  .my-nft-page .goddess-product-list li {
+    width: calc(100% / 2);
+    padding: 10px 18px;
+  }
+  .no-scrollbar .mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-right: 0 !important;
+  }
+  .no-scrollbar .mCSB_scrollTools .mCSB_scrollTools_vertical {
+    width: 0 !important;
+    display: block !important;
+    opacity: 0;
+  }
+  .mCSB_inside > .mCSB_container {
+    margin-right: 0 !important;
+  }
+  .mCSB_scrollTools .mCSB_dragger {
+    width: 0 !important;
+  }
+  #mCSB_2,
+  #mCSB_2 > * {
+    overflow-y: auto !important ;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible;
+  }
+  /* empty-nft */
+  .empty-nft {
+    padding: 60px 20px 20px;
+  }
+  .empty-nft h1 {
+    font-size: 30px !important;
+  }
+  .empty-nft .imgbox {
+    margin-top: 16px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 12px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 20px;
+    width: 50px !important;
+  }
+  .img-box img {
+    height: auto;
+    max-height: none;
+  }
+}
+@media (max-width: 991px) /* for fablet */ {
+  button#dropdownMenuButton {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .shop-page .your-goddess-box {
+    padding: 4px;
+  }
+  .my-nft-page .outer-content-box,
+  .shop-page .outer-content-box,
+  .transaction-page .outer-content-box {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    height: auto !important;
+  }
+  .stacking-yield,
+  .your-goddess-box,
+  .transaction-page .inner-box {
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+  }
+  .outer-content-box {
+    padding: 4px 15px 20px 15px;
+    border-radius: 15px;
+  }
+  /* transaction */
+  .transaction-box {
+    display: none;
+  }
+  .transaction-data-box p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .transaction-data-box li {
+    margin-bottom: 20px;
+  }
+  .transaction-data-box li .item,
+  .transaction-data-box li .item .date-time {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .transaction-data-box li .item {
+    margin-bottom: 10px;
+  }
+  .transaction-data-box li .item .date-time p {
+    margin-right: 8px;
+  }
+  .transaction-data-box li:nth-child(even) {
+    padding: 10px 4px;
+    position: relative;
+    background-color: #ffdddd;
+  }
+  .about-slider-box .slick-slider .slick-list {
+    padding-right: 0;
+  }
+  .about-slider-box .slider-item {
+    padding: 0 30px;
+    text-align: center;
+  }
+  .slider-img-box img {
+    margin: 0 auto 40px;
+  }
+
+  button.slick-arrow {
+    position: absolute;
+    top: 80px;
+    width: 23px;
+    height: 40px;
+    font-size: 0;
+    border: 0;
+    background: transparent url("../images/left-arrow.svg") no-repeat center
+      center/cover;
+  }
+  button.slick-arrow::before {
+    display: none;
+  }
+  button.slick-arrow.slick-prev {
+    left: 5px;
+  }
+  button.slick-arrow.slick-next {
+    right: 5px;
+    background-image: url("../images/right-arrow.svg");
+  }
+  .tab-buttons {
+    margin-top: 20px;
+  }
+
+  .about-page .title-box {
+    margin-bottom: 30px;
+  }
+  .perks-box .mCSB_scrollTools {
+    opacity: 0;
+    width: 0;
+  }
+  .about-page .perks-box .content-box,
+  .about-page .perks-box.about-content-box {
+    padding: 0;
+  }
+  .slick-slider .slick-list {
+    padding-right: 40px;
+  }
+  .tab-content > .tab-pane {
+    height: auto;
+  }
+
+  .about-content {
+    position: relative;
+    z-index: 101;
+  }
+
+  .tab-content > .tab-pane.active {
+    display: block;
+  }
+  /* empty-nft */
+  .empty-nft-page:after {
+    border-radius: 15px;
+  }
+  .empty-nft {
+    padding: 60px 20px 20px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .empty-nft h1 {
+    font-size: 40px;
+  }
+  .empty-nft-page .title-box.blue-bg {
+    z-index: 0;
+  }
+  .empty-nft .imgbox {
+    margin-top: 16px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 12px;
+  }
+  .empty-nft .imgbox a {
+    margin-right: 20px;
+    width: 70px;
+  }
+}
+@media (max-width: 376px) /* for mobile */ {
+  .team-info p {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+  .team-info .social-media a img {
+    max-width: 30px;
+  }
+  .shop-page .goddess-product-list .active-btn {
+    padding: 12px 22px;
+  }
+  .active-btn {
+    padding: 12px 20px;
+  }
+}
+@media (max-width: 400px) /* for mobile */ {
+  .shop-page .goddess-product-list .active-btn {
+    padding: 12px 17px;
+  }
+  .active-btn {
+    padding: 12px 20px;
+  }
+}
+.text-end {
+  text-align: right;
+}
+@media (min-height: 700px) and (max-height: 800px) {
+  .about-content-box {
+    /* max-height: 340px; */
+  }
+  .team-infobox {
+    max-width: 240px;
+  }
+}
+@media (min-width: 1400px) and (min-height: 801px) {
+  .about-page .outer-content-box {
+    padding: 50px 62px 40px 49px;
+  }
+}
+/****Responsive Css End******/
+
+/* Slider */
+.slick-slider {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+
+  display: block;
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+
+  content: "";
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+
+  height: 100%;
+  min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+
+  height: auto;
+
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.login-button {
+  margin: 20px 0 0 auto;
+}
+
+.signup {
+  color: #ffdddd;
+  font-size: large;
+  font-weight: bold;
+}
+
+.signup:hover {
+  color: white;
+}
+.date {
+  width: 16%;
+}
+.time {
+  width: 18%;
+}
+.type {
+  width: 18%;
+}
+.item {
+  width: 26%;
+}
+.transaction-data-box li .item-mb,
+.transaction-data-box li .item-mb .date-time {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.transaction-data-box li .item-mb {
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-page .outer-content-box {
+    height: calc(100vh - 105px);
+  }
+}
+@media (max-height: 700px) and (min-width: 992px) {
+  .outer-content-box {
+    height: auto !important;
+  }
+}
+@media (max-height: 700px) and (max-width: 991px) {
+  .shop-page .goddess-product-list-box {
+    max-height: 70vh;
+    padding-bottom: 12px;
+  }
+  .about-page .outer-content-box {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .about-page .outer-content-box .inner-box {
+    height: 100% !important;
+  }
+}
+@media (max-width: 767px) {
+  .about-page .outer-content-box .inner-box {
+    height: auto !important;
+  }
+  .about-page .outer-content-box {
+    height: auto !important;
+  }
+}
+@media (min-height: 700px) and (max-height: 850px) and (min-width: 1400px) {
+  .about-page .outer-content-box .inner-box {
+    height: 100% !important;
+  }
+  .about-page .outer-content-box {
+    height: calc(100vh - 138px) !important;
+  }
+  .about-content-box {
+    max-height: 43vh;
+  }
+}
